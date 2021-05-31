@@ -1,0 +1,22 @@
+//BreakPoints based on 1024/16 
+@media (min-width: 64em){
+    //styles go here
+}
+
+//Sass mapa( 1em = 16px)ejemplpo:(640/16, 1024/16, 1400/16 )  
+$breackpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+
+//Sass mapa 639px, , 1023px, 1399,
+$breackpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "83.6875em");
+
+@mixin breakpoint-up($size) {
+   @media (min-width: map-get($breackpoints-up, $size)){
+       @content;
+   } 
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breackpoints-down, $size)){
+        @content;
+    } 
+ }

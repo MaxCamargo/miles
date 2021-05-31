@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110.084" height="84" viewBox="0 0 110.084 84">
+  <defs>
+    <filter id="Rectángulo_356" x="0" y="0" width="110.084" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="BTN_-_Buscar_tu_Carro" data-name="BTN - Buscar tu Carro" transform="translate(-37.088 -544.007)">
+    <g transform="matrix(1, 0, 0, 1, 37.09, 544.01)" filter="url(#Rectángulo_356)">
+      <g id="Rectángulo_356-2" data-name="Rectángulo 356" transform="translate(12 9)" fill="#e6484b" stroke="#fff" stroke-linejoin="round" stroke-width="6">
+        <rect width="86.084" height="60" rx="10" stroke="none"/>
+        <rect x="-3" y="-3" width="92.084" height="66" rx="13" fill="none"/>
+      </g>
+    </g>
+    <g id="Grupo_4601" data-name="Grupo 4601" transform="translate(80.761 571.655)">
+      <ellipse id="Elipse_236" data-name="Elipse 236" cx="8.691" cy="8.677" rx="8.691" ry="8.677" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Línea_354" data-name="Línea 354" x2="7.856" y2="7.843" transform="translate(14.908 14.735)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

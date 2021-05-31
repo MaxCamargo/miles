@@ -1,0 +1,46 @@
+.ads {
+  &__container {
+    height: 184px;
+    border: solid 1px #e6e6e6;
+    border-radius: 6px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    .ads__promos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      p {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: $black;
+        font-weight: bolder;
+        @include breakpoint-down(small) {
+          width: 50%;
+          font-size: 1.1rem;
+        }
+        span {
+          color: $milesBrand;
+        }
+      }
+      img {
+        @include breakpoint-down(small) {
+          width: 50%;
+        }
+      }
+    }
+    .ads__text {
+      margin: 0.5rem 2rem 0 2rem;
+      text-align: center;
+      .text{
+        span{
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}

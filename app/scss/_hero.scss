@@ -1,0 +1,87 @@
+.hero {
+  position: relative;
+  &__container {
+    position: relative;
+    height: 448px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("/images/bg-qs.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("/images/BTN-Buscar.svg");
+      z-index: 1;
+    }
+  }
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  &__card {
+    position: relative;
+    background-color: white;
+    margin: 1.3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: 1px solid #c8c8c8;
+    -webkit-box-shadow: -1px 2px 14px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 14px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 14px -8px rgba(0, 0, 0, 0.75);
+
+    .hero__card--icon {
+      display: flex;
+      justify-content: center;
+    }
+    .hero__card--text {
+      flex-basis: auto;
+      margin-left: 1rem;
+      input {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 70px;
+        &::placeholder {
+          font-size: 18px;
+          color: $black;
+          font-weight: bolder;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+    }
+    .hero__card--box {
+      display: flex;
+      width: 50%;
+    }
+  }
+
+  &__toggle {
+    margin: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    .hero__toggle--title {
+      color: $darklight;
+      margin-left: 1rem;
+    }
+  }
+  &__search {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+  }
+}
